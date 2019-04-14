@@ -42,9 +42,9 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
-var counter = 0;
-var addedUrls = [];
-var urlPairs = {};
+var counter = 1;
+var addedUrls = ['https://www.freecodecamp.org/forum/'];
+var urlPairs = {1:'https://www.freecodecamp.org/forum/'};
 
 app.post('/api/shorturl/new',function(req,res){
   if(addedUrls.indexOf(req.body.url)==-1){
